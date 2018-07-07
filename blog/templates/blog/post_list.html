@@ -1,21 +1,35 @@
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+{% load staticfiles %}
+
 <html>
     <head>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">    
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <br>
         <title>Amselung</title>
     </head>
 
+    
     <body>
-        <div>
-            <h1>Amselung</h1>
+        <div class="page-container">
+            <div class="page-header">
+                <h1>Amselung</h1>
+            </div>
         </div>
-    <h2>Es funktioniert!</h2>
-       <p>... und nun? </p>
-  
-    <div>
-    <h2>Zweiter Beitrag</h2>
-        <p>weiter geht's</p>
-    </div>
+        <div class="post">
+            <h2>Es funktioniert!</h2>
+             <p>... und nun? </p>
+        </div>
 
-    <div><em>...und tschüss!</em></div>
+         <div class="post">
+             <h2>Zweiter Beitrag</h2>
+             <p>weiter geht's</p>
+         </div>
+
+         <div class="end">
+             <em>...und tschüss!</em>
+        </div>
     </body>
  </html>
